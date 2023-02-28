@@ -99,7 +99,6 @@ protobuf==3.19.3
 pure-eval==0.2.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio @ file:///C:/Users/ABHI%20%27S%20PC/pipwin/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
 pycparser==2.21
 pydantic==1.9.1
 Pygments==2.11.2
