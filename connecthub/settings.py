@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-r+^i=7*0-@2e&jy&yv4jvh@l-u_!p^9+vnyxn-76&onsfj5fom
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -137,15 +137,15 @@ STATIC_URL = '/static/'
 
 MEDIA_URL= '/images/'
 
-STATICFILES_DIRS=[
-             os.path.join(BASE_DIR, 'static'),
+# STATICFILES_DIRS=[
+            #  os.path.join(BASE_DIR, 'static'),
 
             # BASE_DIR / "static"
     
-]
+# ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 # Default primary key field type
@@ -157,3 +157,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 
 # django_heroku.settings(locals())
+
+
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
